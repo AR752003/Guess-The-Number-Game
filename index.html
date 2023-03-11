@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body onload="init()">
+    
+    <main>
+        <div id="welcomeScreen">
+            <h2>Guess The Random Number Between 1-100</h2>
+            <i class="fab fa-regular fa-game-console-handheld"></i>
+            <section class="eventSeciton">
+                <p>Select The Difficulty</p>
+                <div class="button-wrapper">
+                    <button onclick="easyMode()" >Easy: 10 attempts</button>
+                    <button onclick="hardMode()" >Hard : 5 attempts</button>
+                </div>
+            </section>
+        </div>
+        <!-- Our actual game area -->
+        <div id="gameArea">
+            <div id="newGameButton">
+                <button onclick="newGameBegin()">New Game</button>
+            </div>
+            <section>
+                <h3 id="textOutput">Your Guess</h3>
+                <input type="number" id="inputBox" min="1" max="100" placeholder="Enter Your Number" onchange="compareGuess()" 
+               
+                />
+            </section>
+            <section class="stats">
+                <div class="info">
+                    <p>Number of previous attempts</p>
+                    <span id="attempts">0</span>
+                </div>
+                <div class="info">
+                    <p>Number of previous guess</p>
+                    <span id="guesses">0</span>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+
+
+
+    <!-- For reference purpose  -->
+
+    <!-- <main>
+        <h1>Heading h1</h1>
+        <section>
+            This is my section
+        </section>
+        <p>This is paragraph</p>
+    </main>  -->
+    <!-- main tag store the main element of html ie main tag sabka baap hai ek document me ek hi main tag use kar sakte hai -->
+    <!--  The main tag specifies the main content of a document -->
+    <!--  -->
+<script src="script.js"></script>
+</body>
+
+</html>
